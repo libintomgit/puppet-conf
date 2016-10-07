@@ -1,0 +1,20 @@
+Problem
+--------
+
+Install and run <perticular> pacage in a remote system.
+
+How
+
+run the <script>.py with <hostname> aurgument or list of hostanme from a <file>
+<hostname> 2nd aurgument as hostname
+<file> list of hostnames in a file
+
+1. Collect the host name from the second argument
+	a. make sure 2nd aurgument is present, if not ask to enter the proper hostname.
+	b. make sure 2nd aurgument is a hostame ending with ".corp.inmobi.com"
+2. Fping the hostname and make sure its Alive
+	a. Use the 2nd aurgument hostname name and check if its Alive
+	b. If not print hostname is unreachable
+3. ssh to the hostname : if the hostname is alive, ssh to the host with available login
+4. Check if the desired package is already installed
+5. Install the pakages if not already available and retun completed. else not succussfull.
